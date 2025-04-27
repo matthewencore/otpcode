@@ -168,10 +168,8 @@ smpp:
 
 | HTTP Метод | Путь | Назначение |
 |:-----------|:-----|:-----------|
-| POST | `/register` | Регистрация нового пользователя через форму |
 | POST | `/api/auth/login` | Аутентификация пользователя (JWT) |
 | POST | `/api/auth/register` | Регистрация нового пользователя через API |
-| GET | `/` | Главная страница |
 | GET | `/api/telegram/get/status-link` | Проверка статуса привязки Telegram chat_id |
 | POST | `/api/telegram/send-telegram` | Отправка сообщения в Telegram |
 | POST | `/api/telegram/fill-chat-id` | Регистрация chat_id пользователя |
