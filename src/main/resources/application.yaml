@@ -1,0 +1,50 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: Ваш_Логин
+    password: Ваш_Пароль_
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/otp_db
+    password: Ваш_Пароль_
+    username: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  thymeleaf:
+    mode: HTML
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    encoding: UTF-8
+    enabled: true
+  application:
+        name: otp
+
+telegrambots:
+  enabled: true
+  bots:
+    - name: Auth
+      username: otp_auth_service_bot
+      token: 7738620665:AAFW0oYquPlmwiRN0do7FQ9g6VbMB_wLFHA
+
+jwt:
+  secret: gdt3-ge3f-ahr1-3a6ndg-secret-key-here
+
+smpp:
+  host: localhost
+  port: 2775
+  system_id: smppclient1
+  password: password
+  system_type: OTP
+  source_addr: OTPService
