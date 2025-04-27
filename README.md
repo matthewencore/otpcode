@@ -153,11 +153,6 @@ spring:
           starttls:
             enable: true
 
-telegram:
-  bot:
-    username: your_bot_username
-    token: your_bot_token
-
 smpp:
   host: your_smpp_gateway_host
   port: 2775
@@ -165,6 +160,7 @@ smpp:
   password: your_smpp_password
   system-type: your_system_type
 ```
+Телеграм бота оставил настроенным
 
 ---
 
